@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(119, 136, 153, 0.9); 
+  padding: 10px; 
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+  .navigation li {
+    display: inline-block;
+    padding: 10px 20px;
+ 
+  }
+  .navigation a{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navigation a:hover {
+    color: black;
+    cursor: pointer;
+  }
+  
+  .categories,
+  .user-actions,
+  .logo {
+    padding: 20px;
+  }
+  .user-actions{
+    margin-right: 10px;
+  }
+  .logo {
+    max-width: 280px;
+  }
+  
+  .category {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .subcategories {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    background-color: rgba(119, 136, 153); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .category:hover .subcategories {
+    display: block;
+  }
+  
+  .subcategories ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .subcategories li {
+    padding: 10px;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .logo-container {
+      display: none; 
+    }
+  
+    .user-actions {
+      display: none; 
+      width: 100%;
+      position: absolute;
+      top: 90px; 
+      left: 0;
+      flex-direction: column;
+      padding: 10px 0;
+      background-color: rgba(119, 136, 153, 0.9);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      z-index: 0;
+    }
+  
+    .menu-open {
+      display: flex;
+      align-items: center;
+    }
+  
+    .hamburger-menu {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .navigation ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+  
+    .navigation li {
+      padding: 10px; 
+      text-align: center;
+    }
+
+  }
+

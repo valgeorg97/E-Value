@@ -1,0 +1,51 @@
+.subnavbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: solid rgb(199, 199, 199) 1px;
+  padding: 10px;
+  margin-top: 90px;
+}
+
+.subnavbar-section {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select,
+input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.left-side{
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .subnavbar-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .left-side {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .right-side {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .subnavbar-section, select, input, label {
+    width: 50%;
+    margin: 5px 0; 
+  }
+}

@@ -1,0 +1,14 @@
+.filter-container {
+    text-align: center;
+    margin-bottom: 15px;
+    color: grey;
+  }
+  
+  .filter-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .filter-options {
+    display: inline-block;
+  }
