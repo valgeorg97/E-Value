@@ -54,6 +54,7 @@
   border-radius: 5px;
   background-color: #f9f9f9;
   height: 40vh;
+  min-height: 35vh;
 }
 
 .order-summary h1 {
@@ -86,12 +87,13 @@
   padding: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .cart-container {
       flex-direction: column;
   }
+
   .cart-items, .order-summary {
-      flex: 1 0 auto;
+      flex: 1 0;
   }
 }
 h2{
