@@ -13,8 +13,8 @@ import './Login.css';
 const Login: React.FC<LoginProps> = ({ email, password, onEmailChange, onPasswordChange, onLogin }) => {
   return (
     <div className="login-container">
-      <h2>Login</h2>
       <form>
+      <h2>Login</h2>
         <label>
           Email:
           <input type="email" value={email} onChange={(e) => onEmailChange(e.target.value)} />

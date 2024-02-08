@@ -92,8 +92,9 @@ const Register: React.FC = () => {
 
   return (
     <div className="register-container">
-      <h2>Register</h2>
+      
       <form>
+      <h2>Register</h2>
         <label>
           Email:
           <input
