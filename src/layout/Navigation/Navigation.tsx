@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navigation.css';
 import Logo from '../../assets/images/logo.png';
-import { AiOutlineHeart, AiOutlineShoppingCart, AiOutlineUser, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineHeart, AiOutlineShoppingCart, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import SubNavigation from '../SubNavigation/SubNavigation';
 import Profile from '../../components/Profile/Profile';
 import Banner from '../../components/Banner/Banner';
