@@ -40,6 +40,11 @@ body {
     color: black;
     cursor: pointer;
   }
+  .login { 
+    position: absolute;
+    top: 28px;
+    font-size: 22px;
+  }
   
   .categories,
   .user-actions,
@@ -47,7 +52,7 @@ body {
     padding: 20px;
   }
   .user-actions{
-    margin-right: 10px;
+    margin-right: 50px;
   }
   .logo {
     max-width: 280px;
@@ -101,6 +106,10 @@ body {
       background-color: rgba(119, 136, 153, 0.9);
       box-shadow: 0 8px 16px rgba(0,0,0,0.1);
       z-index: 0;
+    }
+    .login{
+      position: absolute;
+      top: 20px;
     }
   
     .menu-open {

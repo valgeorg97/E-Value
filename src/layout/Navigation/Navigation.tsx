@@ -89,9 +89,9 @@ const Navigation: React.FC<NavigationProps> = ({ onCategoryChange, onSubcategory
                 <Profile user={user} />
               </li>
             ) : (
-              <li>
+              <li >
                 <Link to="/login">
-                  <AiOutlineUser />Login
+                  <p className='login'>Login </p>
                 </Link>
               </li>
             )}
